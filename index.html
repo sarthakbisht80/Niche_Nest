@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NicheNest - Community Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Login Section -->
+    <div id="loginContainer">
+        <h2 id="Mainhead">NicheNest</h2>
+        <div>
+            <h3>Login</h3>
+            <input type="email" id="username" placeholder="Email" required><br>
+        </div>
+        <div>
+            <input type="password" id="password" placeholder="Password" required><br>
+        </div>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="mainContent" style="display:none;">
+        <div id="inner-btn">
+
+            <button onclick="logout()">Logout</button>
+            <button id ="Mode-btn">Mode</button>
+            
+
+        </div>
+        <!-- Create Community -->
+        <div id="postBar">
+            <input type="text" id="communityName" placeholder="Enter Community Name">
+            <button onclick="createCommunity()">Create Community</button>
+        </div>
+        
+        <!-- Community List -->
+        <section>
+            <h2>Communities</h2>
+            <ul id="communityList"></ul>
+        </section>
+
+        <!-- Feed Post Section -->
+        <section id="feedSection">
+            <h2>Post in a Community</h2>
+            <textarea id="postContent" placeholder="Write something..."></textarea><br>
+            <input type="file" id="postMedia" accept="image/*,video/*"><br>
+            <button onclick="createPost()">Post</button>
+        </section>
+
+        <!-- Feed -->
+        <section id="feed"></section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

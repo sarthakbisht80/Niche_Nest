@@ -1,0 +1,237 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f3f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 105vh;
+}
+
+#Mainhead{
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+h2 {
+    color: #1f1818;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Login section */
+#loginContainer {
+    width: 450px;
+    height: 400px;
+    background-color: hsla(0, 54%, 81%, 0.222);
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#loginContainer input {
+    width: 90%;
+    padding: 12px;
+  margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#loginContainer button {
+    width: 100%;
+    padding: 17px;
+    background-color: #5c6bc0;
+    color: white;
+    
+    border: none;
+   margin-top: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginContainer button:hover {
+    background-color: #3f51b5;
+}
+
+/* Main content section */
+
+#mainContent {
+    width: 100%;
+    max-width: 1000px;
+    height: 85vh;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+}
+
+#postBar {
+ margin-top:20px;
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3f51b5;
+}
+
+#feedSection {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+/* Feed Section */
+#feed {
+    margin-top: 30px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.post strong {
+    font-size: 18px;
+    color: #3f51b5;
+}
+
+.post p {
+    color: #555;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.post img, .post video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+}
+
+.comment .timestamp {
+    display: block;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.comment {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.comment div {
+    font-size: 14px;
+    color: #444;
+}
+
+input.comment-input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Like Button */
+button.like-button {
+    background-color: #ff4081;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.like-button:hover {
+    background-color: #f50057;
+}
+
+/* Community List Styling */
+#communityList li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: #e8eaf6;
+    transition: background-color 0.3s;
+}
+
+#communityList li:hover {
+    background-color: #c5cae9;
+}
+
+#communityList li.active {
+    background-color: #3f51b5;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #mainContent, #loginContainer {
+        width: 85%;
+        padding: 18px;
+    }
+
+    .post img, .post video {
+        max-width: 100%;
+    }
+}
